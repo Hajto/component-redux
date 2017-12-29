@@ -1,4 +1,4 @@
 import connectState from './connectState'
 import ReduxComponent from './ReduxComponent'
 
-export default {connectState, ReduxComponent}
+export {connectState, ReduxComponent}

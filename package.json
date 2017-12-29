@@ -1,9 +1,10 @@
 {
   "name": "component-redux",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Minimal wrapper around React.Component enabling managing state in redux-like manor.",
   "main": "dist/main.js",
   "jsnext:main": "main.mjs",
+  "git": "https://github.com/Hajto/component-redux",
   "browser": "main.browser.js",
   "scripts": {
     "build": "babel src --out-dir dist",
