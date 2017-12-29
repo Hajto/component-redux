@@ -5,7 +5,7 @@ export default class ReduxComponent extends Component {
     this.setState(this.componentReducer(this.state, action))
   }
 
-  componentReducer = () => {
+  componentReducer() {
     throw new Error('You have to implement the reducer first');
   }
 }

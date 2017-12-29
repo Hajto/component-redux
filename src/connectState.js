@@ -5,8 +5,13 @@ export default (initialState, reducer) => (component) => {
   return class extends ReduxComponent {
     state = initialState
 
+    componentReducer(state, action) {
+      return reducer(state, action)
+    }
+
     render() {
-      return React.cloneElement(component, {...this.props, localDispatch: this.localDispatch})
+      console.log("Component: ", component)
+      return component({...this.props, localDispatch: this.localDispatch, state: this.state})
     }
   }
 }
